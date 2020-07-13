@@ -1,8 +1,8 @@
-(Work in progress)
-
 # Camel LSP client for Vim
 
-This is a short instruction on how to integrate your Vim editor with [Camel LSP server](https://github.com/camel-tooling/camel-language-server).
+This is short instructions for how to integrate your Vim editor with [Camel LSP server](https://github.com/camel-tooling/camel-language-server).
+
+![Demo](images/demo.gif)
 
 ## Prerequisites
 
