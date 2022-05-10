@@ -27,7 +27,7 @@ Here we use [vim-plug](https://github.com/junegunn/vim-plug) but you can use a p
 ```sh
 mkdir -p ~/lsp/camel-lsp-server
 cd ~/lsp/camel-lsp-server
-curl -L https://repo1.maven.org/maven2/com/github/camel-tooling/camel-lsp-server/1.1.0/camel-lsp-server-1.1.0.jar -O
+curl -L https://repo1.maven.org/maven2/com/github/camel-tooling/camel-lsp-server/1.5.0/camel-lsp-server-1.5.0.jar -O
 ```
 
 ## Install Camel LSP to your vim
@@ -35,13 +35,13 @@ curl -L https://repo1.maven.org/maven2/com/github/camel-tooling/camel-lsp-server
 Add following to `~/.vimrc`:
 
 ```vim
-if executable('java') && filereadable(expand('~/lsp/camel-lsp-server/camel-lsp-server-1.1.0.jar'))
+if executable('java') && filereadable(expand('~/lsp/camel-lsp-server/camel-lsp-server-1.5.0.jar'))
   au User lsp_setup call lsp#register_server({
     \ 'name': 'camel',
     \ 'cmd': {server_info->[
     \   'java',
     \   '-jar',
-    \   expand('~/lsp/camel-lsp-server/camel-lsp-server-1.1.0.jar')
+    \   expand('~/lsp/camel-lsp-server/camel-lsp-server-1.5.0.jar')
     \ ]},
     \ 'whitelist': ['java', 'xml']
     \ })
