@@ -43,7 +43,7 @@ if executable('java') && filereadable(expand('~/lsp/camel-lsp-server/camel-lsp-s
     \   '-jar',
     \   expand('~/lsp/camel-lsp-server/camel-lsp-server-1.5.0.jar')
     \ ]},
-    \ 'whitelist': ['java', 'xml']
+    \ 'whitelist': ['java', 'xml', 'yaml']
     \ })
 endif
 ```
