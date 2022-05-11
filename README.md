@@ -4,6 +4,9 @@ This is short instructions for how to integrate your Vim editor with [Camel LSP 
 
 ![Demo](images/demo.gif)
 
+
+![XmlDemo](images/xmll.gif)
+
 ## Prerequisites
 
 This instruction requires the following plugins:
